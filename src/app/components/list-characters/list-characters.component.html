@@ -1,11 +1,22 @@
-<div class="row" style="width: 100%;">
-    <div *ngFor="let character of listCharacters$ | async; index as i" class="col-lg-4 mb-4">
-      <div class="card" style="width: 18rem;">
+<div class="container">
+  <div class="row" style="width: 100%">
+    <div
+      *ngFor="let character of listCharacters$ | async; index as i"
+      class="col-lg-4 mb-4"
+    >
+      <div class="card" style="width: 18rem">
         <div class="card-body">
-          <img src="{{urlImg}}/{{i+1}}.jpeg" class="card-img-top" alt="{{character.name}}">
-          <h5 class="card-title">{{character.name | uppercase}}</h5>
-          <a routerLink="{{character.name}}" class="btn btn-primary">Detalhes</a>
+          <img
+            src="{{ urlImg }}/{{ i + 1 }}.jpeg"
+            class="card-img-top"
+            alt="{{ character.name }}"
+          />
+          <h5 class="card-title">{{ character.name | uppercase }}</h5>
+          <a routerLink="/character/{{ character.id }}" class="btn btn-primary"
+            >Detalhes</a
+          >
         </div>
       </div>
     </div>
+  </div>
 </div>

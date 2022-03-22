@@ -1,0 +1,42 @@
+header{
+  margin-top: 30px;
+}
+
+header img{
+  float: left;
+  margin-left: 20%;
+  padding-top: 15px;
+}
+
+.menu{
+  display: block;
+  background-color: rgb(8, 26, 36);
+  padding-right: 5%;
+  text-align: right;
+  height: 60px;
+}
+
+.menu ul{
+  display: inline-block;
+}
+
+.menu li{
+  display: inline-block;
+  padding-left: 40px;
+}
+
+.menu a{
+  color: rgb(101, 134, 151);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 16px;
+}
+
+.menu a:hover{
+  color: white;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+}

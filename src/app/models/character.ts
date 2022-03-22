@@ -1,13 +1,18 @@
 import { Origin } from './origin';
 export class Character {
-id?: number;
+id?: string;
 name?: string;
 status?: string;
 species?: string;
 type?: string;
 gender?: string;
 origin?: Origin;
-img?: string;
+location?: Location;
+image?: string;
+episodes?: [];
+url?: string;
+created?: string;
+
 
 constructor(object: Partial<Character>){
   Object.assign(this, object);

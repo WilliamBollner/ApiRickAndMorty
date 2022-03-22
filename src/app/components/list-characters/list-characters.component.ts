@@ -1,7 +1,7 @@
+import { Character } from './../../models/character';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subject } from 'rxjs';
-import { ResponseLink } from 'src/app/models/response-link';
 import { ApiRickService } from 'src/app/services/api-rick.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { ApiRickService } from 'src/app/services/api-rick.service';
 })
 export class ListCharactersComponent implements OnInit {
 
-  listCharacters$ = new Subject<ResponseLink[]>();
+  listCharacters$ = new Subject<Character[]>();
 
   urlImg: string = "https://rickandmortyapi.com/api/character/avatar";
 

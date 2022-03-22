@@ -1,1 +1,19 @@
-<p>detail-character works!</p>
+<section id="dados">
+  <section class="content-texto">
+    <h1>{{ characterObj.name | uppercase }}</h1>
+  </section>
+  <div class="img">
+    <img
+      class="img-style"
+      src="{{ characterObj.image }}"
+      alt="Imagem destaque"
+    />
+  </div>
+  <div>
+    <ul class="lista">
+      <li>{{ characterObj.status }}</li>
+      <li>{{ characterObj.species }}</li>
+      <li>{{ characterObj.gender }}</li>
+    </ul>
+  </div>
+</section>
